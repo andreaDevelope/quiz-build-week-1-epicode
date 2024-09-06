@@ -1,0 +1,154 @@
+body {
+  background-image: url(./assets/img/bg.jpg);
+  background-size: cover;
+  max-width: 800px;
+  padding-left: 6%;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.logo img {
+  width: 150px;
+  text-align: left;
+  padding-top: 3%;
+}
+
+h1 {
+  font-family: "Outfit", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-top: 10%;
+  margin-bottom: 8%;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 0.7;
+}
+
+h1 > span {
+  font-weight: 700;
+}
+.title {
+  margin-top: 6%;
+  margin-right: 50%;
+}
+.instructions {
+  text-align: left;
+  font-size: small;
+}
+
+h3 {
+  font-family: "Outfit", system-ui;
+  font-size: 25px;
+  color: #d20094;
+  margin-bottom: 0;
+}
+p {
+  margin-inline-start: auto;
+  margin-top: 0.2rem;
+  margin-right: 45%;
+}
+
+.instructions > ul > li {
+  margin-bottom: 0.6%;
+}
+li > span {
+  font-weight: bold;
+}
+
+.instructions > ul {
+  margin: 0;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  padding: 0;
+  padding-left: 1rem;
+}
+
+.button {
+  display: inline-block;
+  width: 160%;
+  height: 50px;
+  border: 2px solid rgb(254, 254, 254);
+  background-color: rgba(100, 100, 100, 0);
+  color: rgb(254, 254, 254);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.button:hover:enabled {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+
+  user-select: none;
+}
+
+.checkText {
+  margin-left: 0.5rem;
+  margin-right: 35%;
+  font-weight: 700;
+  font-size: 12px;
+}
+.illuminated {
+  background-color: rgba(0, 255, 255, 0.2); /* Cambia il background al celestino */
+  transition: background-color 0.3s ease; /* Transizione morbida per il cambio di background */
+}
+
+.illuminated:hover {
+  transform: scale(1.05); /* Ingrandimento su hover */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4); /* Ombra al passaggio del mouse */
+}
+#myButton {
+  font-size: 20px;
+  margin-right: 0;
+  background-color: rgba(100, 100, 100, 0);
+}
+
+span {
+  color: rgb(254, 254, 254);
+}
+
+#myButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+  color: rgb(5, 5, 5);
+  background-color: rgb(0, 255, 255);
+}
+
+#myCheckbox {
+  width: 15px;
+  height: 15px;
+  appearance: none;
+  background-color: transparent;
+  border: solid 1px white;
+  cursor: pointer;
+  position: relative;
+}
+
+#myCheckbox:checked {
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+#myCheckbox:checked::after {
+  content: "✔";
+  font-size: 18px;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden {
+  display: none;
+}

@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+header {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+}
+
+#epicodeLogo {
+  width: 150px;
+  padding: 1rem 0;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#titleContainer {
+  max-width: 70%;
+}
+
+h1 {
+  font-family: "Outfit", "sans-serif";
+  font-size: 60px;
+  color: white;
+}
+#titleFeedback h1 {
+  text-align: center;
+}
+
+#container {
+  margin-top: 3rem;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  font-family: "Outfit", "sans-serif";
+  font-size: 28px;
+  color: white;
+  font-weight: 300;
+  margin-top: 1rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+#inputContainer {
+  margin: 1%;
+  border-bottom: #d20094 solid 2px;
+  max-width: 70%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+input {
+  font-family: "Outfit", "sans-serif";
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 1rem 3.5rem;
+  font-size: 18px;
+  width: 50%;
+}
+
+#buttonContainer {
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  width: 15%;
+  height: 50px;
+  border: 2px solid #e7e7eb;
+  background-color: rgba(100, 100, 100, 0);
+  color: rgb(254, 254, 254);
+  position: relative;
+  bottom: 3rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 12vh;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+  background-color: rgb(0, 255, 255);
+  color: rgb(20, 20, 20);
+}
+
+#starsContainer {
+  text-align: center;
+  margin: 3%;
+}
+
+.star {
+  text-align: center;
+  display: inline-block;
+  padding: 2% 2%;
+  background-image: url(../img/star.svg);
+  background-size: contain;
+  filter: brightness(0.1);
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+
+.filled {
+  filter: brightness(1);
+}
+
+.star.hovered {
+  filter: brightness(1);
+}
+
+#span-feedback {
+  font-size: 63px;
+  position: relative;
+  bottom: 17px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Outfit font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <!--  -->
+    <!-- links CSS -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/results.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/epicode_logo.png" alt="logo-epicode.png" />
+    </header>
+    <main>
+      <div class="container">
+        <aside class="correct">
+          <div>
+            <h3 class="font-weight-lite">Correct</h3>
+            <h3 id="correct-perc">66.7%</h3>
+            <p id="correct-rapp">4/6 questions</p>
+          </div>
+        </aside>
+
+        <section class="hero">
+          <h1>Results</h1>
+          <p class="hero-parag">The summary of your answers</p>
+          <div>
+            <div class="ps-abdsolute">
+              <h6 class="gradient-text" id="h6">
+                Congratulations!
+                <p class="color">You passed the exam.</p>
+              </h6>
+              <p class="gradient-text">
+                We'll send you the certificate <br />
+                in few minutes <br />
+                Check your email (including <br />
+                promotion / spam folder)
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <aside class="wrong">
+          <div>
+            <h3 class="font-weight-lite">Wrong</h3>
+            <h3 id="wrong-perc">33.3%</h3>
+            <p id="wrong-rapp">2/6 questions</p>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <aside>
+      <a href="./feedback.html"><button>RATE US</button></a>
+    </aside>
+
+    <footer>
+      <table>
+        <thead>
+          <tr class="display-left">
+            <th>DOMANDE</th>
+            <th>ESATTE</th>
+            <th>DATE</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="./assets/script/questionario.js"></script>
+    <script src="./js/results.js"></script>
+  </body>
+</html>

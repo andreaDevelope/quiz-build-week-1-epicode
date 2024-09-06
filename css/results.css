@@ -1,0 +1,260 @@
+/* box sizing per tutti */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* 
+sfondo della pagina e grandezze
+scalabili 
+*/
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/img/bg.jpg);
+  background-size: cover;
+  background-position: 50% 70%;
+  /* Outfit font */
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* inizio header con logo */
+header {
+  height: 12vh;
+  line-height: 22vh;
+}
+
+header > img {
+  width: 150px;
+  margin-left: 12vw;
+}
+
+/* inizio main */
+
+.container {
+  text-align: center;
+}
+
+.correct,
+.hero,
+.wrong {
+  display: inline-block;
+  vertical-align: top;
+  margin-inline: -3px;
+  font-size: 20px;
+  width: 100%;
+  height: 90vh;
+}
+
+.correct,
+.wrong {
+  margin-block: 28vh;
+  display: inline-block;
+  vertical-align: top;
+  margin-inline: -3px;
+  text-align: center;
+}
+
+.correct {
+  height: 25vh;
+  width: 33%;
+  color: #e7e7eb;
+}
+
+.hero {
+  height: 85vh;
+  width: 30%;
+  color: #e7e7eb;
+  text-align: center;
+}
+
+.wrong {
+  height: 25vh;
+  width: 33%;
+  color: #e7e7eb;
+}
+
+/*
+ div interni per centrare il testo senza 
+l'aline-center
+*/
+.correct > div {
+  width: 31%;
+  margin-inline: auto;
+  text-align: left;
+}
+
+.hero > div {
+  position: relative;
+  margin-inline: auto;
+  height: 300px;
+  width: 300px;
+  margin-block: 2.5rem;
+  border-radius: 50%;
+}
+
+/* regola per l'animazione */
+@keyframes revealGradient {
+  from {
+    mask: conic-gradient(from 0deg at 50% 50%, transparent 0%, black 0%);
+  }
+  to {
+    mask: conic-gradient(from 0deg at 50% 50%, transparent 0%, black 100%);
+  }
+}
+
+#graphic {
+  width: 100px;
+  height: 100px;
+  background: conic-gradient(#3498db 0deg, #3498db 120deg, #2ecc71 120deg, #2ecc71 240deg, #e74c3c 240deg, #e74c3c 360deg);
+  animation: revealGradient 3s linear forwards;
+}
+
+.hero > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+}
+
+.wrong > div {
+  width: 28%;
+  margin-inline: auto;
+  text-align: right;
+}
+
+h1,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+.font-weight-lite {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.hero-parag {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.ps-abdsolute {
+  position: absolute;
+  top: 5rem;
+  left: 4.5rem;
+}
+
+#h6 {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.color {
+  color: #00ffff;
+}
+
+.gradient-text {
+  font-size: 0.8rem;
+}
+
+/* inizio footer */
+aside {
+  text-align: center;
+  margin: 0;
+}
+
+button {
+  width: 15%;
+  height: 40px;
+  border: 2px solid #e7e7eb;
+  background-color: rgba(100, 100, 100, 0);
+  color: rgb(254, 254, 254);
+  position: relative;
+  bottom: 3rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+  background-color: rgb(0, 255, 255);
+  color: rgb(20, 20, 20);
+}
+
+@keyframes fillGradient {
+  0% {
+    background-image: conic-gradient(#c2128d 0%, #00ffff 0%);
+  }
+  100% {
+    background-image: conic-gradient(#c2128d 0% var(--correct-end), #00ffff 0% var(--wrong-end));
+  }
+}
+
+table {
+  margin-inline: auto;
+  border-collapse: collapse;
+  color: white;
+  margin-bottom: 2rem;
+  width: 95%;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+.display-left {
+  border: none;
+}
+
+td {
+  border-collapse: collapse;
+}
+
+th {
+  color: #c2128d;
+}
+tr {
+  border-bottom: 1px solid #c2128d;
+  padding-top: 16px;
+}
+
+.display-inline {
+  display: inline-block;
+}
+
+.is-correct-false,
+.is-correct-true {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.is-correct-false {
+  color: rgba(255, 0, 0, 0.932);
+}
+
+.is-correct-true {
+  color: rgb(0, 252, 0);
+}
